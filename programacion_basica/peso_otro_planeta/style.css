@@ -1,0 +1,127 @@
+body{
+    background:#89b8fa;
+    margin:0;
+}
+/* ---------------------variables- */
+:root{
+    --color-rosa:#056fff;
+    --color-oscuro:#242f3f;
+}
+
+.h2_text{
+    display:flex;
+    justify-content: center;
+    color: white;
+    background: var(--color-oscuro);
+    width: 100%;
+}
+.h2_text:hover{
+    color:var(--color-rosa);
+}
+
+.script{
+    background: transparent;
+    display:flex;
+    /* width: 900px; */
+    
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
+    
+}
+.script:hover{
+    /* background-color: var(--color-rosa); */
+    color:var(--color-rosa);
+    border-radius: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px;
+    
+    
+
+}
+.container_texto p{
+    text-transform: uppercase; 
+}
+.container_texto p:hover{
+    color:var(--color-rosa);
+}
+
+
+
+
+
+
+.container .container_texto {
+    /* display:flex; */
+    background-color:var(--color-oscuro);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    border-radius: 10px;
+    padding:10px;
+    margin-top: 25px;
+    box-shadow:0 0 2px 1px #6a7f9c;
+    
+    /* border:1px solid red; */
+}
+/* ------------------planetas grillas- */
+.container .planet_marte{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:1 ;
+}
+.container .planet_jupiter{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+
+.planet_tierra,
+.planet_marte,
+.planet_jupiter{
+    height: 300px;
+    width: 300px;
+    /* border:1px solid red; */
+    margin: auto;
+    background-size: cover;
+    
+} 
+.planet_tierra{
+    background-image: url(tierra.png);
+    background-repeat: no-repeat;
+
+}
+.planet_marte{
+    background-image: url(marte.png);
+    background-repeat: no-repeat;
+    
+
+}
+.planet_jupiter{
+    background-image: url(jupiter.png);
+    background-repeat: no-repeat;
+
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--color-oscuro);
+    color: white;
+    padding:10px;
+}
+footer div {
+    display: inherit;
+    align-items: center;
+}
+.footer_div a {
+    color: white;
+
+}

@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    padding:0;
+    background:#4c6b95;
+}
+:root{
+    --color-back: #15181b;
+    --color-text:#056fff;
+}
+.header_h1{
+    background-color: var(--color-back) ;
+    margin: 0;
+    height: 100px;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_h1 strong:hover{
+    color: white;
+}
+.main_section{
+    max-width: 900px;
+    margin: auto;
+    /* border: 1px solid gold; */
+}
+
+
+
+/* -----------------section que contiene h2 inputs */
+.text_section{
+    /* border:1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:var(--color-back);
+    color: var(--color-text);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.text_section form input {
+    /* background-color: aliceblue; */
+    box-shadow: 0 0 1px 1px #58554f;
+    border-radius: 5px;
+}
+.text_section form button{
+    color:var(--color-text);
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    height: 25px;
+    box-shadow: 0 0 1px 1px #58554f;
+}
+.text_section form button:hover{
+    background-color: var(--color-back);
+    color:white;
+    cursor: pointer;
+}
+
+/* ---------------------section que contiene al canvas */
+.canvas_section{
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.canvas_section canvas{
+    /* background-color: purple; */
+    border:1px solid blue;
+    
+}
