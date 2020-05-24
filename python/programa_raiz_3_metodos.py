@@ -16,7 +16,7 @@ if nu_metodo == 1:
             print(f'la raiz cuadrada de {objetivo} es {respuesta}')
         else:
             print(f'{objetivo} no tiene una raiz cuadrada exacta')
-    exhaustiva(int(objetivo))  
+    exhaustiva(objetivo)  
 
 
 elif nu_metodo == 2:
@@ -36,7 +36,7 @@ elif nu_metodo == 2:
             print('No se encontro la raiz cuadrada del {objetivo}')   
         else:
             print(f'La raiz cuadrada de {objetivo} es {respuesta}')
-     aproximacion(int(objetivo))    
+     aproximacion(objetivo)    
 
 else:
     objetivo = int(input('Ingresa un entero: '))    
@@ -54,7 +54,7 @@ else:
                 alto = respuesta
             respuesta = (alto + bajo) / 2
         print(f'La raiz cuadrada de {objetivo} es {respuesta}')
-    binaria(int(objetivo))  
+    binaria(objetivo)  
 
 
 
