@@ -1,0 +1,6 @@
+
+opcion = int(input('Ingresa un numero del 1 al 3: 1_paja 2_cemento 3_hierro')
+if opcion == 1:
+	print('elegiste paja')
+elif:
+	print('cemento')

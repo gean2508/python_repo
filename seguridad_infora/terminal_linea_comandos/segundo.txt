@@ -1,0 +1,3 @@
+	print('elegiste paja')
+elif:
+	print('cemento')

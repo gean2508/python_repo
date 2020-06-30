@@ -1,0 +1,3 @@
+Hola Platzi Bienvenido! 
+userId: Platzi
+heroe_tipo: Arquero

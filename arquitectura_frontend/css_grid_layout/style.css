@@ -1,0 +1,30 @@
+body{
+background-color:#1b3252;
+font-family:arial;
+}
+.container{
+    display:grid;
+    /* grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:2fr 2fr 2fr; */
+    border:1px solid gold;
+    /* grid-template:filas/columnas; */
+    grid-template:2fr 3fr 1fr /repeat(3, 1fr) 2fr;
+    grid-gap: 20px;
+}
+.item{
+    background:rgb(26, 106, 133);
+    padding:10px;
+    border:1px solid red;
+}
+.item:nth-of-type(4){
+    /* background:#ffd900f5; */
+    overflow:autos;
+    display:grid;
+    grid-template: 4fr 4fr /4fr 3fr 4fr;
+    grid-gap:10px ;
+    
+}
+.sub_item{
+    border:1px solid gold;
+   
+}

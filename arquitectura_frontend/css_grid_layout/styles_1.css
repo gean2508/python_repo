@@ -1,0 +1,121 @@
+body{
+    background: #cbddf5;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color: #056fff;
+    --color-hover:#182435;
+}
+.container{
+    /* border:1px solid gold; */
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2.5fr 1fr 1fr;
+    grid-gap:5px;
+    height: 100vh;
+    /* align-content:;
+    justify-content:center; */
+}
+.container header{
+    grid-column:1/4;
+   
+    grid-row: 1 /3;
+    
+    background: var(--color);
+    text-transform: uppercase;
+    font-weight: 800;
+   display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container header:hover{
+    background-color: var(--color-hover) ;
+}
+.container_side{
+    grid-column:1/2;
+    
+    grid-row: 3/ 5;
+   
+    background: var(--color);
+    text-transform: uppercase;
+    font-weight: 800;
+   display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container_side:hover{
+    background-color: var(--color-hover) ;
+}
+
+
+.container_content{
+    grid-column:2/3;
+  
+    grid-row: 3/ 5;
+    
+    background: var(--color);
+    text-transform: uppercase;
+    font-weight: 800;
+   
+    
+    
+    /* align-self: auto;
+    justify-self: center; */
+}
+.container_content:hover{
+    background-color: var(--color-hover) ;
+}
+.container_footer{
+    grid-column:3/4;
+    
+    grid-row: 3/3;
+    
+    background: var(--color);
+    text-transform: uppercase;
+    font-weight: 800;
+   display:flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.container_footer:hover{
+    background-color: var(--color-hover) ;
+}
+
+
+.container_img{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:5px;
+
+}
+
+
+.container_img_1{
+    background:var(--color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    text-transform:uppercase;
+    
+}
+.container_img_1:hover{
+    background-color: var(--color-hover) ;
+}
+.container_img_2{
+    background: var(--color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    text-transform:uppercase;
+    
+}
+.container_img_2:hover{
+    background-color: var(--color-hover) ;
+}

@@ -1,0 +1,387 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#bdd9f3;
+}
+:root{
+    --back-color:#6598f7;
+    --blanquito-color:#fdfafa;
+}
+.main_nav{
+    /* border:1px solid red; */
+    display:grid;
+    grid-template-columns: 0.5fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background: var(--blanquito-color);
+    
+    
+}
+.nav_logo{
+   /* border:1px solid yellow; */
+    background-image: url(./img/logo.png);
+    height: 50px;
+    cursor:pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main_nav form {
+    grid-column:2/4;
+    grid-row:1/2;
+    
+    display:flex;
+    align-items: center;
+    margin:0 5px;
+}
+.main_nav form input{
+    width: 100%;
+    padding:10px;
+    border-radius: 10px;
+    border:1px solid #000;
+    /* border:none; */
+    /* box-shadow:0 0 4px 1px rgb(68, 68, 68); */
+}
+.nav_user{
+    grid-column: 4/5;
+    display:flex;
+    justify-content:end;
+    align-items: center;
+    margin-right: 4em;
+   
+    cursor: pointer;
+}
+
+
+.nav_user img{
+    max-width: 50px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 20px;
+    box-shadow:0 0 2px 1px rgb(144, 67, 60);
+}
+
+
+/* -----------------------------------------------main section */
+
+.main_container{
+    /* border:1px solid red; */
+    display:grid;
+    grid-template-columns:repeat(10, 1fr);
+    grid-template-rows: 0.5fr repeat(6, 0.5fr);
+    column-gap:2em;
+    /* row-gap:1em; */
+    padding:0 10px 5px 0;
+    background-size: 100vh;
+    width: auto;
+}
+.navigation{
+    background:var(--back-color);
+    grid-row:1/10;
+    border-radius:3px;
+    width: 100%;
+   
+    
+}
+/* ---------------------------navigation icons */
+
+.icon_home{
+    background-image:url(./img/home.svg);
+    height: 50px;
+    width: 100%;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom:1em;
+    cursor: pointer;
+    /* border:1px solid red; */
+}
+.icon_flame{
+    background-image:url(./img/flame.svg);
+    height: 50px;
+    width: 100%;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom:1em;
+    cursor: pointer;
+    
+    /* border:1px solid red; */
+}
+.icon_heart{
+    background-image:url(./img/heart.svg);
+    height: 50px;
+    width: 100%;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom:1em;
+    cursor: pointer;
+    
+    
+}
+.icon_settings{
+    background-image:url(./img/engranaje.svg);
+    height: 50px;
+    width: 100%;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 15em;
+    cursor: pointer;
+    margin-bottom:1em;
+}
+p{
+    
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+/* -------------------------movies start */
+.title{
+    grid-column:2/5;
+    /* border:1px solid white; */
+    display:flex;
+    align-items:end;    
+}
+.title h1{
+    margin: 0;
+}
+.movie_1{
+    background-image: url(./img/sushi1.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 80%;
+    display:flex;
+    align-items: flex-end;
+    
+}
+
+.movie_1{
+    /* border:1px solid black; */
+    grid-column:2/5;
+    grid-row: 2/3;      
+   
+}
+
+.movie_2{
+    background-image: url(./img/sushi2.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 70%;
+    display:flex;
+    align-items: flex-end;
+}
+.movie_2{
+    /* border:1px solid black; */
+    grid-column: 5/8;
+    grid-row: 2/3; 
+    
+    
+}
+.movie_3{
+    background-image: url(./img/sushi3.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+    display:flex;
+    align-items: flex-end;
+}
+
+.movie_3{
+    /* border:1px solid black; */
+  grid-column: 8/11;
+  grid-row: 2/3;
+}
+.movie_4{
+    background-image: url(./img/sushi3.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+    display:flex;
+    align-items: flex-end;
+}
+.movie_4{
+    /* border:1px solid black; */
+    grid-column: 2/5;
+    grid-row: 4/5; 
+    
+    
+}
+
+.movie_5{
+    background-image: url(./img/sushi1.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 80%;
+    display:flex;
+    align-items: flex-end;
+}
+.movie_5{
+    /* border:1px solid black; */
+    grid-column: 5/8;
+    grid-row: 4/5; 
+    
+    
+}
+
+.movie_6{
+    background-image: url(./img/sushi2.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+    display:flex;
+    align-items: flex-end;
+}
+.movie_6{
+    /* border:1px solid black; */
+    grid-column: 8/11;
+    grid-row: 4/5; 
+    
+    
+}
+.movie_7{
+    background-image: url(./img/sushi2.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+    display:flex;
+    align-items: flex-end;
+}
+.movie_7{
+    /* border:1px solid black; */
+    grid-column: 2/5;
+    grid-row: 6/8; 
+    
+    
+}
+.movie_8{
+    background-image: url(./img/sushi3.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 50%;
+    display:flex;
+    align-items: flex-end;
+}
+.movie_8{
+    /* border:1px solid black; */
+    grid-column: 5/8;
+    grid-row: 6/8; 
+    
+    
+}
+.movie_9{
+    background-image: url(./img/sushi1.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 80%;
+    display:flex;
+    align-items: flex-end;
+    
+}
+.movie_9{
+    /* border:1px solid black; */
+    grid-column: 8/11;
+    grid-row: 6/8; 
+    
+    
+}
+.movie_9,
+.movie_8,
+.movie_7,
+.movie_6,
+.movie_5,
+.movie_4,
+.movie_3,
+.movie_2,
+.movie_1{
+    border-radius:3px;
+    box-shadow: 0 0 4px 1px #000;
+    cursor: pointer;
+}
+ .main_container .title h1{
+    color: white;
+    margin-bottom:5px;
+}
+/* -----------------------------------------------------Movie description */
+.movie_description{
+    background-color: hsla(209, 100%, 75%, 0.304);
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding: 5px;
+    text-align: start;
+    color:rgb(0, 0, 0);
+    
+
+}
+.movie_description h3,p{
+    margin: 0;
+    
+    /* border:1px solid red; */
+}
+.movie_description:hover{
+    /* color: #056fff; */
+    background-color: hsla(209, 100%, 75%, 0.704);
+}
+
+
+
+
+footer{
+    display:flex;
+    height: 3em;
+    /* border:1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    background:var(--blanquito-color);
+}
+.div_left{
+    height: 100%;
+    /* border:1px solid red; */
+    display:flex;
+    align-items: center;
+    margin-left:10px;
+}
+.dere{
+    display:flex;
+    /* border:1px solid red; */
+    height: 100%;
+    align-items: center;
+    margin-right: 10px;
+}
+.dere a{
+    color:#056fff;
+    text-decoration: none;
+}
+.contact_github, .contact_instagram{
+    margin-right: 5em;
+    cursor: pointer;
+}
+.contact_github{
+    background-image: url(./img/github.png);
+    height: 40px;
+    width: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contact_instagram{
+    background-image: url(./img/insta.png);
+    height: 40px;
+    width: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;

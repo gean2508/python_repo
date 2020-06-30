@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1593298847 source:/home/ninja/Documentos/platzi/c++/leer_archivos_externos/main.cpp
+	<iostream>
+	<fstream>
+

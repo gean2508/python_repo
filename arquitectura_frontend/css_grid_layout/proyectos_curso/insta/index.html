@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Gean</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .post_list{
+            display:grid;
+            justify-content: center;
+            grid-template-columns:repeat(3, minmax(100px, 293px));
+            grid-gap:28px;
+            
+        }
+        .post{
+            cursor:pointer;
+            position: relative;
+            /* width: 300px;*/ 
+            display:block;
+            
+        }
+        .post_image{
+            margin:0;
+        }
+        .post_image img{
+            width:100%;
+            vertical-align: top;
+           
+        }
+        .post_overlay{
+            background:rgba(0, 0, 0, .4);
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:0;
+            top:0;
+            display:none;
+
+            
+        }
+        .post:hover .post_overlay{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            color:white;
+            text-align:center;
+        }
+        .post_likes,
+        .post_comments{
+            display: inline-block;
+            margin: 5px;
+            width:80px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:768px){
+            .post_list{
+                grid-gap:3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="post_list">
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./cielito2.jpg" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1500</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./paco.JPG" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1600</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./aliens.JPG" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">2000</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./cielito2.jpg" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1500</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./paco.JPG" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1600</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./aliens.JPG" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">2000</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./cielito2.jpg" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1500</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./paco.JPG" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">1600</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post_image">
+                <img src="./aliens.JPG" alt="" srcset="">
+            </figure>
+            <span class="post_overlay">
+                <p>
+                    <span class="post_likes">2000</span>
+                    <span class="post_comments">10</span>
+                </p>
+            </span>
+        </a>
+        
+    </section>
+</body>
+</html>
