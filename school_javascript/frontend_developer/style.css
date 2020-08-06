@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 35, 75);
+    
+}
+
+header{
+    position: absolute;
+    background-color: #fffdfd00;
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.logo{
+    /* border:1px solid green; */
+    font-size: 6px;
+    margin:5px;
+    color: black;
+}
+header nav{
+    width: 70%;
+    /* border:1px solid green; */
+}
+header nav ul{
+    
+    /* border:1px solid blue; */
+    margin:2px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+header nav ul li{
+    /* border:1px solid yellow; */
+    list-style: none;
+    margin:0 0 0 5px;
+    padding:2px;
+    font-size: 15px;
+    
+   
+    
+}
+header nav ul li a{
+    /* esta sentencia quita el subrallado de los a */
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* -----------------------------------------FINAL DEL HEADER */
+
+.back_img{
+    background-image: url(/img/fondo.JPG);
+    height: 150px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:1px solid red;
+}
